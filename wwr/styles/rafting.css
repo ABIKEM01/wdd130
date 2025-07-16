@@ -3,15 +3,13 @@
   --secondary-color: #2c666e;
   --accent1-color: #f0edee;
   --accent2-color: #0a090c;
-  --heading-font: "Roboto", sans-serif;
-  --body-font: "Lato", sans-serif;
+
+  /* Font Labels */
+  --heading-font: "Roboto", sans-serif; /* Headings font */
+  --body-font: "Lato", sans-serif; /* Body text font */
 }
 
-header {
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
-}
-
+/* Reset and Layout */
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +17,7 @@ header {
 }
 
 body {
-  font-family: var(--body-font);
+  font-family: var(--body-font); /* Applying body font */
   color: var(--accent1-color);
 }
 
@@ -30,9 +28,16 @@ footer {
   margin: 0 auto;
 }
 
+/* Header */
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+}
+
+/* Typography */
 h1,
 h2 {
-  font-family: var(--heading-font);
+  font-family: var(--heading-font); /* Applying heading font */
   color: var(--primary-color);
 }
 
@@ -44,9 +49,7 @@ article {
   padding: 8px;
 }
 
-.socialmedial a {
-  text-decoration: none;
-}
+/* Hero Section */
 .hero {
   position: relative;
 }
