@@ -161,3 +161,124 @@ footer {
 .socialmedia img {
   width: 30px;
 }
+
+/* Contact Page Styles */
+
+/* Company Information */
+.company-info {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: var(--accent1-color);
+  border-radius: 8px;
+}
+
+.company-info h2 {
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.company-info p {
+  margin-bottom: 0.3rem;
+}
+
+/* Google Map */
+.company-info .map iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 6px;
+}
+
+/* Employee Team Section */
+.team {
+  margin: 2rem 0;
+}
+
+.team h2 {
+  text-align: center;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.employee-gallery {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.employee-gallery figure {
+  text-align: center;
+  max-width: 200px;
+}
+
+.employee-gallery img {
+  width: 100%;
+  max-height: 122px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.employee-gallery figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Contact Form */
+.contact-form {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: var(--accent1-color);
+  border-radius: 8px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.contact-form button {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #1e4d53;
+}
