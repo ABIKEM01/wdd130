@@ -9,13 +9,13 @@
       content="Get in touch with White Water Rafting. Find our address, phone, email, and ask questions about trips, reservations, and our services."
     />
     <meta name="author" content="Abiodun Babayode" />
-    <link rel="stylesheet" href="styles/rafting.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/rafting.css" />
   </head>
   <body>
     <header>
@@ -46,11 +46,11 @@
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15852.858132037203!2d3.3892903999999997!3d6.62025045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1753797621408!5m2!1sen!2sng"
             width="600"
             height="450"
-            style="border: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          >
+          </iframe>
         </div>
       </section>
 
@@ -75,38 +75,63 @@
       <section class="contact-form">
         <h2>Send Us a Message</h2>
         <form>
-          <label for="name">Your Name:</label>
-          <input type="text" id="name" name="name" required />
+          <label for="full-name">Your Name:</label>
+          <input type="text" id="full-name" name="name" required />
 
-          <label for="email">Your Email:</label>
-          <input type="email" id="email" name="email" required />
+          <label for="email-address">Your Email:</label>
+          <input type="email" id="email-address" name="email" required />
 
-          <p>Purpose of Message:</p>
-          <label
-            ><input
-              type="radio"
-              name="purpose"
-              value="General Inquiry"
-              required
+          <label for="phone-number">Your Phone (Optional):</label>
+          <input type="tel" id="phone-number" name="phone" />
+
+          <fieldset>
+            <legend>Purpose of Message:</legend>
+            <label for="general-inquiry">
+              <input
+                type="radio"
+                id="general-inquiry"
+                name="purpose"
+                value="General Inquiry"
+                required
+              />
+              General Inquiry
+            </label>
+            <label for="reservation-question">
+              <input
+                type="radio"
+                id="reservation-question"
+                name="purpose"
+                value="Reservation Question"
+              />
+              Reservation Question
+            </label>
+            <label for="website-suggestion">
+              <input
+                type="radio"
+                id="website-suggestion"
+                name="purpose"
+                value="Website Suggestion"
+              />
+              Website Suggestion
+            </label>
+          </fieldset>
+
+          <label for="user-message">Message:</label>
+          <textarea
+            id="user-message"
+            name="message"
+            rows="5"
+            required
+          ></textarea>
+
+          <label for="newsletter-subscription">
+            <input
+              type="checkbox"
+              id="newsletter-subscription"
+              name="subscribe"
             />
-            General Inquiry</label
-          >
-          <label
-            ><input type="radio" name="purpose" value="Reservation Question" />
-            Reservation Question</label
-          >
-          <label
-            ><input type="radio" name="purpose" value="Website Suggestion" />
-            Website Suggestion</label
-          >
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-
-          <label
-            ><input type="checkbox" name="subscribe" /> Please subscribe me to
-            the monthly newsletter</label
-          >
+            Please subscribe me to the monthly newsletter
+          </label>
 
           <button type="submit">Send Message</button>
         </form>
@@ -116,21 +141,22 @@
     <footer>
       <p>&copy;2025 White Water Rafting | Abiodun Temitope Babayode</p>
       <nav class="socialmedia">
-        <a href="https://facebook.com"
-          ><img src="images/facebook.svg" alt="Facebook"
-        /></a>
-        <a href="https://twitter.com"
-          ><img src="images/twitter.svg" alt="Twitter"
-        /></a>
-        <a href="https://instagram.com"
-          ><img src="images/instagram.svg" alt="Instagram"
-        /></a>
+        <a href="https://facebook.com">
+          <img src="images/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com">
+          <img src="images/twitter.svg" alt="Twitter" />
+        </a>
+        <a href="https://instagram.com">
+          <img src="images/instagram.svg" alt="Instagram" />
+        </a>
       </nav>
       <p>
         <a
           href="https://app.moqups.com/ISu4bSD3hcV7vGBgYx7ByhONckyctiCg/view/page/ad64222d5"
-          >View Wireframe</a
         >
+          View Wireframe
+        </a>
       </p>
     </footer>
   </body>
